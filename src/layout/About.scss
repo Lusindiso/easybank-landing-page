@@ -1,0 +1,44 @@
+.About {
+  grid-column: 1/-1;
+  background-color: hsl(220, 16%, 96%);
+  display: grid;
+
+  align-content: start;
+  grid-template-columns: 1fr repeat(8, 10vw) 1fr;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr repeat(8, 11.8vw) 1fr;
+  }
+  @media screen and (max-width: 720px) {
+    text-align: center;
+  }
+  .secondary-heading {
+    grid-column: 2/10;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 4rem;
+    margin-top: 10rem;
+  }
+  .content {
+    grid-column: 2/10;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+
+    line-height: 1.5;
+    color: hsl(233, 8%, 62%);
+    width: 65rem;
+    @media screen and (max-width: 720px) {
+      width: 80vw;
+      margin: auto;
+    }
+  }
+  .services {
+    grid-column: 2/10;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.Header {
+  grid-column: 1/-1;
+  background-color: hsl(0, 0%, 98%);
+
+  display: grid;
+  grid-template-columns: 1fr repeat(8, 10vw) 1fr;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr repeat(8, 11.8vw) 1fr;
+  }
+
+  .heading {
+    grid-column: 2/6;
+    margin: auto 8rem auto 0;
+    color: hsl(233, 8%, 62%);
+    @media screen and (max-width: 720px) {
+      grid-column: 2/10;
+      margin: 4rem 2vw;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 5rem;
+      font-weight: 300;
+      padding: 1rem 0;
+      @media screen and (max-width: 400px) {
+        font-size: 4rem;
+      }
+    }
+
+    &__content {
+      padding: 1rem 0;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+  }
+
+  .illustration {
+    margin-left: -2rem;
+    grid-column: 6/-1;
+
+    position: relative;
+    background-image: url('../assets/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -7rem -26.5rem;
+
+    @media screen and (max-width: 720px) {
+      grid-column: 2/10;
+      grid-row: 1;
+      height: 100vw;
+    }
+    @media screen and (max-width: 380px) {
+      background-image: url('../assets/bg-intro-mobile.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &-image__top {
+      position: absolute;
+      left: 12rem;
+      top: -11.5rem;
+      width: 100%;
+      @media screen and (max-width: 720px) {
+        position: absolute;
+        top: -15.5rem;
+        left: 1rem;
+      }
+    }
+  }
+}

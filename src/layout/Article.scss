@@ -1,0 +1,29 @@
+.Article {
+  grid-column: 1/-1;
+  background-color: hsl(0, 0%, 98%);
+  display: grid;
+  grid-template-columns: 1fr repeat(8, 10vw) 1fr;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr repeat(8, 11.8vw) 1fr;
+  }
+  @media screen and (max-width: 720px) {
+    text-align: center;
+  }
+
+  .secondary-heading {
+    grid-column: 2/10;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
+  .cards {
+    grid-column: 2/10;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
