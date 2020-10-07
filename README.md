@@ -4,6 +4,8 @@
 
 Thanks for checking out my front-end coding project.
 
+Live preview at: (https://za-easybank.netlify.app/)
+
 This project is the results of a front-end coding challenge I took on [Frontend Mentor](https://www.frontendmentor.io)
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
