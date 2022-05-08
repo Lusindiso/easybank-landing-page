@@ -1,4 +1,5 @@
 ## Welcome! 👋 - Easybank landing page
+> This a landing page for a fictional company called EasyBank, which offers banking services.
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
