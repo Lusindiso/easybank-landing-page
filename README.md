@@ -60,10 +60,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-- Reactjs
-- JavaScript
-- JSX
-- CSS3
-- SASS/SCSS
-- Webpack
-- npm
